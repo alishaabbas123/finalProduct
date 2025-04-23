@@ -1,0 +1,115 @@
+.topnav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.topnav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.topnav .active {
+    order: 1;
+    margin-right: 10px;
+    background-color: #083e0cfa;
+    font-weight: 900;
+    color: white;
+    border-radius: 8px;
+}
+
+.topnav .item {
+    order: 1;
+    margin-right: 10px;
+    background-color: #cddc39;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.topnav .split {
+    order: 2;
+    margin-left: auto;
+    display: flex;
+    border-radius: 20px;
+    row-gap: 0px;
+}
+
+.rs {
+    margin-left: 10px;
+    background-color: #cddc39;
+    border-radius: 20px;
+    row-gap: 0px;
+}
+
+
+
+/* Mobile version (max-width: 600px) */
+@media (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .topnav a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .topnav .active, .topnav .item {
+        font-size: 18px;
+        margin-right: 0;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topnav .split{
+        display: flex;
+        flex-direction: column;
+    
+        font-size: 18px;
+        
+        margin-right: 0;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+        margin-right: 10px;
+        background-color: #cddc39;
+        color: white;
+        font-weight: 500;
+        border-radius: 8px;
+        
+        
+    }
+    
+    
+
+    /* Styling for menu items when menu is visible */
+    .topnav ul {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 0;
+    }
+
+    .topnav ul.open {
+        display: flex; /* Show the menu when 'open' class is added */
+    }
+
+    /* Additional styling when menu is active */
+    .topnav ul li {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+    }
+
+    .topnav ul li:first-child {
+        border-top: none;
+    }
+}

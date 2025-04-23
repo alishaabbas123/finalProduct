@@ -1,0 +1,52 @@
+.layout {
+    display: flex;
+    gap: 20px; /* Space between container and controls */
+    padding: 20px;
+    
+}
+
+.container{
+    flex: 1; /* Takes up 2/3 of the screen */
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+       
+    background-color:#083e0cfa ;
+    margin:24px;
+    padding:1px;
+    border-radius: 10px;
+    height:70vh;
+    
+}
+.d{
+    display:flex;
+    flex-direction: row;    
+    margin: 14px;
+    padding:24px;
+    background-color: whitesmoke;
+    opacity: 1;
+    justify-content: space-between;
+    border-radius:8px;
+    font-weight: 600;
+    
+}
+.control{
+    display: flex;
+   flex-direction: column;
+   
+   
+
+    
+}
+button{
+    background-color:#cddc39;
+    border-radius: 8px;
+    margin:8px;
+    padding:8px;
+    font-weight:600;
+
+    
+  
+}

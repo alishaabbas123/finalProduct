@@ -1,0 +1,10 @@
+CREATE DATABASE timetable;
+use timetable;
+CREATE TABLE activity (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+actDay VARCHAR(30) NOT NULL,
+actName VARCHAR(30) NOT NULL,
+actDesc VARCHAR(50)  NULL,
+actTime datetime(3),
+date TIMESTAMP
+);
